@@ -1,0 +1,72 @@
+
+
+CREATE DATABASE login_system
+
+
+
+
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, 
+username VARCHAR(50) NOT NULL UNIQUE, 
+password VARCHAR(255) NOT NULL, 
+create_at TIMESTAMP DEFAULT 
+CURRENT_TIMESTAMP);
+
+
+
+
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+ALTER TABLE products ADD COLUMN image VARCHAR(255);
+
+-- Insertar productos de muestra con imágenes
+INSERT INTO products (name, price, stock, image) VALUES
+('Diamantes', 1000000.00, 10, 'cartier/altajoyeria/diamantes.jpg')
+('Fauna y Flora', 1000000.00, 10, 'cartier/altajoyeria/faunayflora.jpg),
+('Geometria y contraste', 1000000.00, 10, 'cartier/altajoyeria/geometriaycontraste.jpg'),
+('Mag Equinoxe', 1000000.00, 10, 'cartier/altajoyeria/mag-equinoxe.jpg'),
+('Mag Soreli', 1000000.00, 10, 'cartier/altajoyeria/mag-soreli.jpg'),
+('Mag Thiea', 1000000.00, 10, 'cartier/altajoyeria/mag-thiea.jpg'),
+('Panthere', 1000000.00, 10, 'cartier/altajoyeria/panthere.jpg'),
+('Piedras de color', 1000000.00, 10, 'cartier/altajoyeria/piedrasdecolor.jpg'),
+('Surnaturale Hemis', 1000000.00, 10, 'cartier/altajoyeria/surnaturale-hemis.jpg'),
+('Surnaturale PanthereTropicale', 1000000.00, 10, 'cartier/altajoyeria/surnaturale-pantheretropicale.jpg'),
+('Surnaturale Tilandsia', 1000000.00, 10, 'cartier/altajoyeria/surnaturel-tillandsia.jpg'),
+('TuttiFrutti', 1000000.00, 10, 'cartier/altajoyeria/tuttifrutti.jpg'),
+('Anillos para hombre', 1000000.00, 10, 'cartier/joyeria/anillosparahombre.png'),
+('Cactus de Cartier', 1000000.00, 10, 'cartier/joyeria/cactusedcartier.png'),
+('Caressesd'orchides', 1000000.00, 10, 'cartier/joyeria/caressesd'orchidesdecartier.png'),
+('C de Cartier', 1000000.00, 10, 'cartier/joyeria/cdecartier.png'),
+('Clash', 1000000.00, 10, 'cartier/joyeria/clashdecartier.png'),
+('Colecciones Diamante', 1000000.00, 10, 'cartier/joyeria/coleccionesdiamante.png'),
+('Ecrou', 1000000.00, 10, 'cartier/joyeria/ecroudecartier.png'),
+('Fauna y Flora Pendientes ', 1000000.00, 10, 'cartier/joyeria/faunayfloradecartier.png'),
+('Fauna y flora Collar', 1000000.00, 10, 'cartier/joyeria/faunayfloradecartier-collar.png'),
+('Juste un clou', 1000000.00, 10, 'cartier/joyeria/justeunclou.png'),
+('Love', 1000000.00, 10, 'cartier/joyeria/love.png'),
+('Love collar', 1000000.00, 10, 'cartier/joyeria/love-collar.png'),
+('Panthere de cartier', 1000000.00, 10, 'cartier/joyeria/pantheredecartier.png'),
+('Panthere collar', 1000000.00, 10, 'cartier/joyeria/pantheredecartier-collar.png'),
+('Trinity', 1000000.00, 10, 'cartier/joyeria/trinity.png'),
+('Baignore', 1000000.00, 10, 'cartier/relojes/baignore.png'),
+('Ballon de cartier', 1000000.00, 10, 'cartier/relojes/ballondecartier.png'),
+('CartierPrive', 1000000.00, 10, 'cartier/relojes/cartierprive.png'),
+('Cle', 1000000.00, 10, 'cartier/relojes/cledecartier.png'),
+('Coussin', 1000000.00, 10, 'cartier/relojes/coussindecartier.png'),
+('Drive', 1000000.00, 10, 'cartier/relojes/drivedecartier.png'),
+('Panthere reloj', 1000000.00, 10, 'cartier/relojes/pantheredecartier.png'),
+('Pasha', 1000000.00, 10, 'cartier/relojes/pashadecartier.jpg'),
+('jOYA', 1000000.00, 10, 'cartier/relojes/relojesjoya.png'),
+('Ronde', 1000000.00, 10, 'cartier/relojes/rondedecartier.png'),
+('Santos', 1000000.00, 10, 'cartier/relojes/santosdecartier.png'),
+('Tank', 1000000.00, 10, 'cartier/relojes/tank.png'),
+('Tortue', 1000000.00, 10, 'cartier/relojes/tortue.png');

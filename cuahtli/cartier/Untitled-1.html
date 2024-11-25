@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    
+
+    <style>
+        .social-icon {
+  color: white;
+  font-size: 30px;
+}
+
+        ul
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow:hidden;
+            background-color: white;
+        }
+        li
+        {
+            float: left;    
+        }
+        li a
+        {
+            margin-left: 10px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3 ease;
+        }
+        header
+        {
+            font-size: 60px;
+            font-style: italic;
+        }
+        footer
+        {
+            background-color: #c10015;
+            color: rgb(255, 216, 216);
+        }
+        footer a
+        {
+            color: rgb(255, 216, 216);
+        }
+        .cont
+        {
+            color: white;
+            width: 1300px;
+            height: 600px;
+            transition: 0.3s ease;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .cont img
+        {
+            width: 100%;
+            height: 80%;
+        }
+        .cont:hover,.cont:hover a
+        {
+            color: black;
+        }
+        .cont a
+        {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black; /* Color del texto */
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px; /* Grosor del subrayado */
+            background-color:#c10015; /* Color del subrayado */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .carousel {
+            width: 100%; /* Puedes cambiarlo a un valor fijo como 600px */
+            width: 600px; height: 200px; /* Ajusta este valor según sea necesario */
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 750px; height: 200px;
+        }
+        .carousel img {
+            width: 400px;
+            height: 100%; /* Asegura que las imágenes ocupen todo el contenedor */
+            object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
+        }
+        .carousel input {
+            display: none;
+        }
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        .carousel-indicators label {
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 10px;
+            margin: 0 5px;
+            width: 10px;
+        }
+        input:nth-child(1):checked ~ .carousel-images {
+            transform: translateX(0);
+        }
+        input:nth-child(2):checked ~ .carousel-images {
+            transform: translateX(-100%);
+        }
+        input:nth-child(3):checked ~ .carousel-images {
+            transform: translateX(-200%);
+        }
+        input:nth-child(4):checked ~ .carousel-images {
+            transform: translateX(-300%);
+        }
+        .carousel input:nth-child(1):checked ~ .carousel-indicators label:nth-child(1),
+        .carousel input:nth-child(2):checked ~ .carousel-indicators label:nth-child(2),
+        .carousel input:nth-child(3):checked ~ .carousel-indicators label:nth-child(3),
+        .carousel input:nth-child(4):checked ~ .carousel-indicators label:nth-child(4) {
+            background-color: #333;
+        }
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-button.prev {
+            left: 10px;
+        }
+        .carousel-button.next {
+            margin-left: 220px;
+            position: absolute;
+        }
+        .divfoot
+        {
+            
+            text-align: justify;
+            margin-right: 40px;
+            width: 30%;
+            height: auto;
+            padding: 15px;
+            font-style: oblique;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        input
+        {
+            border-radius: 40px; border: none; height: 50px; width: 250px; background-color: #cdcdcd;
+        }
+        input::placeholder
+        {
+            color: #000000;
+        }
+        .enviar
+        {
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            transition: 0.3s;
+        }
+        .enviar:hover
+        {
+            background-color: #cacaca;
+        }
+        footer
+    {
+        background-color: #c10015;
+        color: #ffffff; 
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    </style>
+
+
+
+        <header>
+            
+            <center>Cartier</center>     
+            <hr color=#c10015>
+        </header>
+
+    <body>
+        <ul>
+            <li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="altajoyeria.html">Alta Joyeria</a></li>
+            <li><a href="joyeria.html">Joyeria</a></li>
+            <li><a href="relojes.html">Relojes</a></li>
+            <li style="float: right;"><a style="background-color: #c10015; color: aliceblue;" href="../catalog.php">Lista de productos</a></li>
+            <li style="float: right;"><a style="background-color: #c10015; color: aliceblue;" href="../admin.php">Perfil</a></li>
+        </ul> 
+        <br> <br><br>
+        <center>
+            <div class="cont">
+            <img src="Captura33in.PNG" alt="Imagen principal">
+            <h1>ALMA DE CARTIER</h1>
+            <h4>Un reloj pensado para personas que piensan en grande.</h4>
+            <a href="">Descubrir</a>
+            </div>
+
+
+            <br> <br> <br>
+
+
+
+            <div class="cont" style="display: flex;
+            width: 975px;
+            height: 400px;">
+
+            <img style="width: 500px; height: 400px;" src="Captura444.PNG" alt="Imagen principal">
+            <h1 style="margin-left: 570px; position: absolute; text-align: justify;"> Trinity, un icono que cumple<br>mas de 100 años</h1>
+            <br><br><br>
+            <p style="margin-left: 570px; margin-top: 125px; position: absolute;"> Cartier celebra el centenario y el amor en todas sus formas</p>
+            <a style="margin-left: 570px; margin-top: 160px; position: absolute;" href="">Descubrir</a>
+            </div>
+
+             <br><br>
+
+
+            <h2>LAS PIEZAS DE DISEÑO CARTIER</h2>
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <input type="radio" name="carousel" id="slide4">
+            
+                <div class="carousel-images">
+                    <img src="carr1.jpg" alt="Imagen 1">
+                    <img src="carr2.jpg" alt="Imagen 2">
+                    <img src="carr3.jpg" alt="Imagen 3">
+                    <img src="carr4.jpg" alt="Imagen 4">
+                    <img src="carr5.jpg" alt="Imagen 4">
+                    <img src="carr6.jpg" alt="Imagen 4">
+                    <img src="carr7.jpg" alt="Imagen 4">
+                </div>
+            
+                <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+            
+                <div class="carousel-indicators">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="cont" style="display: flex; width: 400px; height: 400px; margin-left: -425px;">
+                <img src="tornillo1.jpg">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <img src="mujer.jpg">
+                <br>
+                <p>Texto debajo de las imágenes</p> <!-- Agregué este elemento -->
+            </div>
+
+
+            
+        </center>
+        <br><br><br>
+    </body>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 2;
+
+        function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 1) {
+        currentSlide = totalSlides;
+        } else if (currentSlide > totalSlides) {
+        currentSlide = 1;
+        }
+        document.getElementById('slide' + currentSlide).checked = true;
+        }
+    </script>
+
+
+<footer>
+    <div class="divfoot">
+        <h2>Contacto:</h2>
+        <h4> Sebastian Rojas Mata</h4>
+        <h4>4-J</h4>
+        <h4>sebas3000@cartier.com</h4>
+        <h5>Programacion</h5>
+    </div>
+
+    <div class="divfoot">
+        <h2> Redes Sociales:</h2>
+        <h4> Facebook <i class="fab fa-facebook-f social-icon"> </i></h4>
+        <h4>Instagram <i class="fab fa-instagram social-icon"></i></h4>
+        <h4>Whatsapp: 6561234567 <i class="fab fa-whatsapp social-icon"></i></h4>
+        
+    </div>
+
+    <div class="divfoot">
+        <h3>Información y ayuda para clientes</h3>
+        <br>
+        
+        <input type="text" placeholder="sebas3000@cartier.com"> <button class="enviar">Enviar</button>
+        
+    </div>
+    <footer>COPYRIGHT © 2024 CARTIER <img style="width: 50px; height: 50px;" src="botonfooter.jpg" alt=""></footer>
+</html>

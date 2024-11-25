@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Relojes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
+    
+
+    <style>
+         .social-icon {
+  color: white;
+  font-size: 30px;
+}
+        ul
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow:hidden;
+            background-color: white;
+        }
+        li
+        {
+            float: left;    
+        }
+        li a
+        {
+            margin-left: 10px;
+            background-color: rgb(255, 255, 255);
+            display: block;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3 ease;
+        }
+        header
+        {
+            font-size: 60px;
+            font-style: italic;
+        }
+        footer
+        {
+            background-color: #c10015;
+            color: rgb(255, 216, 216);
+        }
+        footer a
+        {
+            color: rgb(255, 216, 216);
+        }
+        .cont
+        {
+            border: 1px solid black;
+            color: white;
+            width: 1000px;
+            height: 600px;
+            transition: 0.3s ease;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .cont img
+        {
+            width: 100%;
+            height: 80%;
+        }
+        .cont:hover,.cont:hover a
+        {
+            color: black;
+        }
+        .cont a
+        {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black; /* Color del texto */
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px; /* Grosor del subrayado */
+            background-color:#c10015; /* Color del subrayado */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .divfoot
+        {
+            
+            text-align: justify;
+            margin-right: 40px;
+            width: 30%;
+            height: auto;
+            padding: 15px;
+            font-style: oblique;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        input
+        {
+            border-radius: 40px; border: none; height: 50px; width: 250px; background-color: #cdcdcd;
+        }
+        input::placeholder
+        {
+            color: #000000;
+        }
+        .enviar
+        {
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            transition: 0.3s;
+        }
+        .enviar:hover
+        {
+            background-color: #cacaca;
+        }
+        footer
+    {
+        background-color: #c10015;
+        color: #ffffff; 
+        display: flex;
+        padding: 20px;
+    }
+    </style>
+    <link rel="stylesheet" href="contrel.css">
+
+
+
+        <header>
+            <center>Cartier</center>     
+            <hr color=#c10015>
+        </header>
+
+    <body>
+        <ul>
+            <li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="altajoyeria.html">Alta Joyeria</a></li>
+            <li><a href="joyeria.html">Joyeria</a></li>
+            <li><a href="relojes.html">Relojes</a></li>
+            <li style="float: right;"><a style="background-color: #c10015; color: aliceblue;" href="../Profile.php"><i class="far fa-user"></i></a></li>
+            <li style="float: right;"><a style="background-color: #c10015; color: aliceblue;" href="../cart.php"><i class="fas fa-shopping-cart"></i></a></li>
+        <br><br><br>
+
+        <center> 
+            <img src="imginicioreloj.jpeg" alt="">
+            <br><br>
+            <div class="cont">
+                <video style="margin-left: -500px;" src="vidiniciorej.mp4" controls autoplay muted loop></video>
+                <h1 style="position: absolute; margin-top:-500px; margin-left: 570px;">The watchmaker of shapes</h1> <br><br><br>
+                <p style="position: absolute; margin-top:-450px; margin-left: 570px; font-size: 20px;">
+                    La Maison Cartier es un lugar donde la <br>
+                    creatividad y la innovación se unen para crear <br>
+                    piezas únicas y emocionantes que te <br>
+                    transportan a un mundo de lujo y elegancia
+                </p>
+                <br><br><br><br><br><br>
+                <p style="position: absolute; margin-top:-450px; margin-left: 600px;font-size: 20px;">
+                    Nuestra coleccion de relojes Cartier. <br>
+                    Disfruta de nuestra experiencia unica
+                </p>
+            </div>
+            <br><br>
+
+            <div class="grid-container">
+                <img src="relojes/tank.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top: 5px; text-align: justify; font-size: 50px;">Tank</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:100px; text-align: justify; font-size: 17px;">
+                    Las dos angarillas paralelas definen la <br>
+                    firma característica del reloj Tank.
+                </p>
+                <h3 style="position: absolute; margin-left: 335px; margin-top:26px;">$25 000 €</h3>
+                <button style="position: absolute; margin-left: 480px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/santosdecartier.png" alt="">
+                <h2 style="position: absolute; margin-left: 10px; margin-top: 15px; text-align: justify; font-size: 30px;">Santos de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 25px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Creado en 1904, el reloj Santos se <br>
+                    basa en el concepto de la forma, el gusto <br>
+                    por el minimalismo, la precisión de las <br>
+                    proporciones y la atención a los detalles.
+                </p>
+                <h3 style="position: absolute; margin-left: 230px; margin-top:26px;">$67 000 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/rondedecartier.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top: 15px; text-align: justify; font-size: 30px;">Ronde de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    El reloj Ronde de Cartier, con sus números romanos, <br>
+                    sus agujas azules en forma de espada y su cabujón de zafiro, <br>
+                    tiene su origen en la época de Louis Cartier. <br>
+                    Su mecanismo de cuerda, coronado por un círculo de minutero tipo <br>ferrocarril,
+                    lo convierte en un verdadero símbolo de elegancia atemporal.
+                </p>
+                <h3 style="position: absolute; margin-left: 425px; margin-top:26px;">$32 000 €</h3>
+                <button style="position: absolute; margin-left: 560px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/relojesjoya.png" alt="">
+                <h2 style="position: absolute; margin-left: 25px; margin-top: 15px; text-align: justify; font-size: 30px;">Relojes Joya</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 25px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Figurativa, abstracta o naturalista: <br>
+                    la pantera vigila con intensidad los <br>
+                    exquisitos relojes de la Maison.
+                </p>
+                <h3 style="position: absolute; margin-left: 230px; margin-top:26px;">$44 000 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/pashadecartier.jpg" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top: 15px; text-align: justify; font-size: 30px;">Pasha de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Fiel a su primera versión de 1985, el nuevo Pasha de Cartier <br>
+                    realza su originalidad y es excepcionalmente poderoso, reuniendo <br>
+                    elementos que van más allá de la relojería clásica. <br>
+                    Es mucho más de lo que percibimos a simple vista.
+                </p>
+                <h3 style="position: absolute; margin-left: 435px; margin-top:26px;">$27 000 €</h3>
+                <button style="position: absolute; margin-left: 560px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/pantheredecartier.png" alt="">
+                <h2 style="position: absolute; margin-left: 20px; margin-top: 20px; text-align: justify; font-size: 26px;">Panthere de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 25px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Creado originalmente en los años 80, el reloj Panthère <br>
+                    debe su nombre al brazalete. Su estructura ultraflexible evoca <br>
+                    los movimientos del animal emblemático de la Panthère.
+                </p>
+                <h3 style="position: absolute; margin-left: 240px; margin-top:26px;">$39 500 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/drivedecartier.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top: 15px; text-align: justify; font-size: 30px;">Drive de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Creado en 2016, el reloj Drive de Cartier hace gala de un diseño único, <br>
+                    definido por una caja curvada, un cristal abombado y una esfera de zafiro. <br>
+                    Su silueta refinada, proporciones virtuosas y movimiento Manufactura lo <br>
+                    convierten en un símbolo impecable de elegancia atemporal.
+                </p>
+                <h3 style="position: absolute; margin-left: 425px; margin-top:26px;">$21 000 €</h3>
+                <button style="position: absolute; margin-left: 560px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/coussindecartier.png" alt="">
+                <h2 style="position: absolute; margin-left: 10px; margin-top: 20px; text-align: justify; font-size: 26px;">Coussin de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 25px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    El reloj Coussin de Cartier se caracteriza por su forma <br>
+                    cuadrada y ribeteada con diamantes engastados en espiral.
+                </p>
+                <h3 style="position: absolute; margin-left: 230px; margin-top:26px;">$67 900 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/cledecartier.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top:15px; text-align: justify; font-size: 30px;">Cle de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    Cartier ratifica su estatus como maestro de la relojería <br>
+                    con la colección Clé de Cartier. Con sus curvas suaves, <br>
+                    sus líneas despejadas y su perfil redondeado, esta nueva <br>
+                    silueta de diseño armonioso es un verdadero ejemplo <br>
+                    de elegancia, precisión y proporción.
+                <h3 style="position: absolute; margin-left: 425px; margin-top:26px;">$29 000 €</h3>
+                <button style="position: absolute; margin-left: 560px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/cartierprive.png" alt="">
+                <h2 style="position: absolute; margin-left: 25px; margin-top: 85px; text-align: justify; font-size: 30px;">Cartier Prive</h2>
+                <br><br><br>
+                <h3 style="position: absolute; margin-left: 230px; margin-top:90px;">$36 000 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:80px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/ballondecartier.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top:20px; text-align: justify; font-size: 26px;">Ballon de cartier</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    El diseño de Ballon Bleu está en armonía con quienes <br>
+                    lo lucen, con el mundo que lo rodea.
+                </p>
+                <h3 style="position: absolute; margin-left: 425px; margin-top:26px;">$45 000 €</h3>
+                <button style="position: absolute; margin-left: 560px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img style="margin-left: 510px;" src="relojes/baignore.png" alt="">
+                <h2 style="position: absolute; margin-left: 25px; margin-top: 20px; text-align: justify; font-size: 30px;">Baignore</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 25px; margin-top:70px; text-align: justify; font-size: 17px;">
+                    En 1958 nace el reloj ovalado curvo, bautizado en 1973 <br>
+                    como Baignoire. La elegancia de sus líneas lo convierte en un reloj <br>
+                    emblemático que se elige por la atemporalidad de su <br>elegancia a la francesa.
+                </p>
+                <h3 style="position: absolute; margin-left: 230px; margin-top:26px;">$61 000 €</h3>
+                <button style="position: absolute; margin-left: 360px; margin-top:10px;"onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            <div class="grid-container">
+                <img src="relojes/tortue.png" alt="">
+                <h2 style=" position: absolute; margin-left: 215px; margin-top:15px; text-align: justify; font-size: 30px;">Tortue</h2>
+                <br><br><br>
+                <p style="position: absolute; margin-left: 215px; margin-top:70px; text-align: justify; font-size: 17px;">
+                   En 1912, el pionero de la relojería Louis Cartier diseñó el reloj <br>
+                   Tortue original, inspirado en una tortuga. En una época en la que <br>
+                   casi todos los relojes eran redondos, su forma acentuada y diseño <br>
+                   sin precedentes definieron un clásico de la relojería Cartier.
+                </p>
+                <h3 style="position: absolute; margin-left: 335px; margin-top:26px;">$39 999 €</h3>
+                <button style="position: absolute; margin-left: 480px; margin-top:10px;" onclick="alerta()">Comprar</button>
+            </div>
+
+
+            <br><br><br>
+
+            
+        </center>
+       
+        
+
+    </body>
+
+    <script>
+        function alerta()
+        {
+            alert("Reloj agregado al carrito");
+        }
+    </script>
+
+
+<footer>
+    <div class="divfoot">
+        <h2>Contacto:</h2>
+        <h4> Sebastian Rojas Mata</h4>
+        <h4>4-J</h4>
+        <h4>sebas3000@cartier.com</h4>
+        <h5>Programacion</h5>
+    </div>
+
+    <div class="divfoot">
+        <h2> Redes Sociales:</h2>
+        <h4> Facebook <i class="fab fa-facebook-f social-icon"></i></h4>
+        <h4>Instagram <i class="fab fa-instagram social-icon"></i></h4>
+        <h4>Whatsapp: 6561234567 <i class="fab fa-whatsapp social-icon"></i></h4>
+        
+    </div>
+
+    <div class="divfoot">
+        <h3>Información y ayuda para clientes</h3>
+        <br>
+        
+        <input type="text" placeholder="sebas3000@cartier.com"> <button class="enviar">Enviar</button>
+    </div>
+</html>
